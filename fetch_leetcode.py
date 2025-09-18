@@ -1,165 +1,131 @@
-#!/usr/bin/env python3
-"""
-fetch_leetcode.py
-Fetches all unique Accepted submissions from your LeetCode account (uses LEETCODE_SESSION from .env)
-and saves them under ./solutions/<language>/{title_slug}.{ext}
-
-Requirements:
-    pip install requests python-dotenv
-Run:
-    python fetch_leetcode.py
-"""
-
-import os, time, re, sys
-from pathlib import Path
+import os
 import requests
-from dotenv import load_dotenv
-from html import unescape
+from bs4 import BeautifulSoup
 
-# --- config ---
-load_dotenv()
-SESSION = os.getenv("LEETCODE_SESSION")
-OUTDIR = Path("solutions")
-PAGE_SIZE = 20   # number of submissions per page (20 is safe); will page automatically
-SLEEP_BETWEEN_REQUESTS = 0.25
-# ----------------
+# Load session and CSRF tokens (replace with your real values or load from .env)
+LEETCODE_SESSION = os.getenv("LEETCODE_SESSION")
+CSRFTOKEN = os.getenv("LEETCODE_CSRF")
 
-if not SESSION:
-    print("LEETCODE_SESSION not found in environment (.env). Exiting.")
-    sys.exit(1)
+if not LEETCODE_SESSION or not CSRFTOKEN:
+    raise ValueError("Please set LEETCODE_SESSION and LEETCODE_CSRF in environment variables")
 
-s = requests.Session()
-s.headers.update({"User-Agent": "Mozilla/5.0", "Referer": "https://leetcode.com"})
-s.cookies.set("LEETCODE_SESSION", SESSION, domain=".leetcode.com")
-
-OUTDIR.mkdir(parents=True, exist_ok=True)
-
-EXT = {
-    'cpp': '.cpp', 'c++': '.cpp', 'java': '.java',
-    'python3': '.py', 'python': '.py',
-    'c': '.c', 'csharp': '.cs', 'c#': '.cs',
-    'javascript': '.js', 'js': '.js', 'typescript': '.ts',
-    'golang': '.go', 'ruby': '.rb', 'swift': '.swift',
-    'kotlin': '.kt', 'php': '.php', 'rust': '.rs'
+HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Referer": "https://leetcode.com",
+    "cookie": f"LEETCODE_SESSION={LEETCODE_SESSION}; csrftoken={CSRFTOKEN}",
+    "x-csrftoken": CSRFTOKEN,
 }
 
-seen_slugs = set()
-saved = 0
-failed = []
+GRAPHQL_URL = "https://leetcode.com/graphql"
+SOLUTIONS_DIR = "solutions"
+os.makedirs(SOLUTIONS_DIR, exist_ok=True)
 
-def safe_name(s):
-    return re.sub(r'[^A-Za-z0-9_\-]', '_', s)
 
-def save_code(code, slug, lang, title):
-    lang_dir = OUTDIR / (lang.lower() if lang else "other")
-    lang_dir.mkdir(parents=True, exist_ok=True)
-    ext = EXT.get(lang.lower() if lang else "", ".txt")
-    filename = f"{safe_name(slug)}{ext}"
-    path = lang_dir / filename
-    # write code
-    path.write_text(unescape(code), encoding="utf-8")
-    # write a small metadata md for reference
-    md = lang_dir / (safe_name(slug) + ".md")
-    md.write_text(f"# {title}\n\nLeetCode: https://leetcode.com/problems/{slug}/\n\nLanguage: {lang}\n", encoding="utf-8")
-    return path
+def fetch_submissions():
+    submissions = []
+    offset = 0
+    limit = 20
 
-def fetch_submission_code(submission_id):
-    # Use GraphQL submissionDetail to get code
-    gql = {
-        "operationName":"submissionDetail",
-        "variables":{"submissionId": str(submission_id)},
-        "query": """
-        query submissionDetail($submissionId: ID!) {
-          submissionDetail(submissionId: $submissionId) {
-            id
-            code
-            lang
-            question {
-              title
+    while True:
+        query = """
+        query recentAcSubmissions($offset: Int!, $limit: Int!) {
+          submissionList(offset: $offset, limit: $limit) {
+            submissions {
+              id
               titleSlug
+              statusDisplay
+              lang
             }
           }
         }
         """
+        variables = {"offset": offset, "limit": limit}
+        resp = requests.post(GRAPHQL_URL, json={"query": query, "variables": variables}, headers=HEADERS)
+        data = resp.json()
+
+        subs = data["data"]["submissionList"]["submissions"]
+        if not subs:
+            break
+
+        submissions.extend(subs)
+        print(f"📥 Fetching submissions offset={offset} ... got {len(subs)}")
+
+        offset += limit
+
+    return submissions
+
+
+def fetch_code(submission_id):
+    """Try GraphQL first, fallback to scraping HTML"""
+    # GraphQL query for submission detail
+    query = """
+    query submissionDetail($id: ID!) {
+      submissionDetail(submissionId: $id) {
+        code
+      }
     }
+    """
+    resp = requests.post(GRAPHQL_URL, json={"query": query, "variables": {"id": submission_id}}, headers=HEADERS)
     try:
-        r = s.post("https://leetcode.com/graphql", json=gql, timeout=15)
-        if r.status_code == 200:
-            j = r.json()
-            detail = j.get("data", {}).get("submissionDetail")
-            if detail:
-                return detail.get("code"), detail.get("lang"), detail.get("question", {}).get("title"), detail.get("question", {}).get("titleSlug")
-    except Exception as e:
+        code = resp.json()["data"]["submissionDetail"]["code"]
+        if code:
+            return code
+    except:
         pass
-    # fallback: try to fetch HTML detail page and extract code
-    try:
-        url = f"https://leetcode.com/submissions/detail/{submission_id}/"
-        r = s.get(url, timeout=15)
-        if r.status_code == 200:
-            # look for submissionCode":"(escaped...)"
-            m = re.search(r'submissionCode":"(.*?)"', r.text, re.DOTALL)
-            if m:
-                code = m.group(1).encode('utf-8').decode('unicode_escape')
-                # get titleSlug from url or page
-                m2 = re.search(r'question-title.*?href=".*?/problems/(.*?)/', r.text)
-                slug = None
-                if m2:
-                    slug = m2.group(1)
-                return code, None, None, slug
-    except Exception:
-        pass
-    return None, None, None, None
 
-# paging through submissions
-offset = 0
-while True:
-    url = f"https://leetcode.com/api/submissions/?offset={offset}&limit={PAGE_SIZE}"
-    print(f"Fetching page offset={offset} ...", end=" ", flush=True)
-    r = s.get(url)
-    if r.status_code != 200:
-        print(f"FAILED (HTTP {r.status_code}). Response snippet: {r.text[:200]}")
-        break
-    data = r.json()
-    subs = data.get("submissions_dump", [])
-    print(f"got {len(subs)} submissions")
-    if not subs:
-        break
+    # Fallback: scrape HTML
+    url = f"https://leetcode.com/submissions/detail/{submission_id}/"
+    r = requests.get(url, headers=HEADERS)
+    soup = BeautifulSoup(r.text, "html.parser")
 
-    for sub in subs:
-        try:
-            if sub.get("status_display") != "Accepted":
-                continue
-            slug = sub.get("title_slug") or sub.get("title")
-            if not slug:
-                continue
-            if slug in seen_slugs:
-                continue
-            seen_slugs.add(slug)
-            sid = sub.get("id")
-            # fetch code (graphql)
-            code, lang, title, qslug = fetch_submission_code(sid)
-            if not code:
-                failed.append((sid, slug))
-                print(f" -> {slug}: FAILED to get code")
-                continue
-            real_slug = qslug or slug
-            lang = lang or sub.get("lang") or "text"
-            path = save_code(code, real_slug, lang, title or real_slug)
-            print(f" -> saved {path}")
-            saved += 1
-            time.sleep(SLEEP_BETWEEN_REQUESTS)
-        except Exception as e:
-            print("error:", e)
-            failed.append((sub.get("id"), sub.get("title_slug")))
+    script = soup.find("script", string=lambda t: t and "submissionCode" in t)
+    if script:
+        text = script.string
+        start = text.find("submissionCode: '")
+        if start != -1:
+            start += len("submissionCode: '")
+            end = text.find("',", start)
+            raw_code = text[start:end]
+            return raw_code.encode().decode("unicode_escape")
 
-    if not data.get("has_next", False):
-        break
-    offset += PAGE_SIZE
-    # small pause between pages
-    time.sleep(0.3)
+    return None
 
-print(f"\nDone. Saved {saved} problems.")
-if failed:
-    print("Failed to fetch code for these submission IDs (locked/premium or other):")
-    for f in failed:
-        print("  ", f)
+
+def save_code(slug, lang, code):
+    ext = {
+        "python3": "py",
+        "cpp": "cpp",
+        "java": "java",
+        "c": "c",
+        "csharp": "cs",
+        "javascript": "js",
+    }.get(lang, lang)
+
+    filename = f"{slug}.{ext}"
+    filepath = os.path.join(SOLUTIONS_DIR, filename)
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(code)
+
+    print(f"💾 Saved {slug} -> {filepath}")
+
+
+def main():
+    print("✅ Loaded session and CSRF tokens")
+    submissions = fetch_submissions()
+    print(f"✅ Total accepted submissions fetched: {len(submissions)}")
+
+    for sub in submissions:
+        slug = sub["titleSlug"]
+        sid = sub["id"]
+        lang = sub["lang"]
+
+        code = fetch_code(sid)
+        if code:
+            save_code(slug, lang, code)
+        else:
+            print(f"   ⚠️  {slug}: FAILED to get code")
+
+
+if __name__ == "__main__":
+    main()
