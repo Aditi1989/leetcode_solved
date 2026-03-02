@@ -14,9 +14,22 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 <!---LeetCode Topics End-->
