@@ -5,6 +5,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Aditi1989/leetcode_solved/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1689-partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -24,6 +25,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
+| [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Aditi1989/leetcode_solved/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -32,4 +34,8 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Aditi1989/leetcode_solved/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
 <!---LeetCode Topics End-->
