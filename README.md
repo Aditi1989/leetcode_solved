@@ -9,5 +9,14 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1689-partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 <!---LeetCode Topics End-->
