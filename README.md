@@ -6,6 +6,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Aditi1989/leetcode_solved/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1689-partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/3666-minimum-operations-to-equalize-binary-string/) | Hard |
 ## Greedy
@@ -40,6 +41,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Aditi1989/leetcode_solved/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1680-concatenation-of-consecutive-binary-numbers/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -58,4 +60,8 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/3666-minimum-operations-to-equalize-binary-string/) | Hard |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 <!---LeetCode Topics End-->
