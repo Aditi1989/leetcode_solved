@@ -11,6 +11,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/Aditi1989/leetcode_solved/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Aditi1989/leetcode_solved/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
+| [1980-find-unique-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/3666-minimum-operations-to-equalize-binary-string/) | Hard |
 ## Greedy
 | Problem Name | Difficulty |
@@ -23,6 +24,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Aditi1989/leetcode_solved/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1980-find-unique-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1980-find-unique-binary-string/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -77,4 +79,12 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Aditi1989/leetcode_solved/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1980-find-unique-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1980-find-unique-binary-string/) | Medium |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1980-find-unique-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1980-find-unique-binary-string/) | Medium |
 <!---LeetCode Topics End-->
