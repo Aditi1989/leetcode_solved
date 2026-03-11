@@ -33,6 +33,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1009-complement-of-base-10-integer](https://github.com/Aditi1989/leetcode_solved/tree/main/1009-complement-of-base-10-integer/) | Easy |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Aditi1989/leetcode_solved/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1680-concatenation-of-consecutive-binary-numbers/) | Medium |
