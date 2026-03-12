@@ -18,6 +18,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | ------- | ------- |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1689-partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -63,6 +64,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/3666-minimum-operations-to-equalize-binary-string/) | Hard |
 ## Ordered Set
 | Problem Name | Difficulty |
@@ -95,4 +97,16 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | ------- | ------- |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/Aditi1989/leetcode_solved/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/Aditi1989/leetcode_solved/tree/main/3130-find-all-possible-stable-binary-arrays-ii/) | Hard |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
+## Minimum Spanning Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 <!---LeetCode Topics End-->
