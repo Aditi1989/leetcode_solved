@@ -18,6 +18,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | ------- | ------- |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1689-partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Array
 | Problem Name | Difficulty |
@@ -26,6 +27,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Aditi1989/leetcode_solved/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1980-find-unique-binary-string/) | Medium |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -56,6 +58,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1680-concatenation-of-consecutive-binary-numbers/) | Medium |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/3666-minimum-operations-to-equalize-binary-string/) | Hard |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -100,6 +103,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Graph Theory
 | Problem Name | Difficulty |
@@ -109,4 +113,8 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 <!---LeetCode Topics End-->
