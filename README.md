@@ -27,6 +27,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Aditi1989/leetcode_solved/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1848-minimum-distance-to-the-target-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1980-find-unique-binary-string/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 ## Matrix
