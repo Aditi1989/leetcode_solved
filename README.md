@@ -19,6 +19,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | ------- | ------- |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Aditi1989/leetcode_solved/tree/main/1689-partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Array
@@ -27,6 +28,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Aditi1989/leetcode_solved/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Aditi1989/leetcode_solved/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/Aditi1989/leetcode_solved/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Aditi1989/leetcode_solved/tree/main/2463-minimum-total-distance-traveled/) | Hard |
@@ -47,6 +49,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/Aditi1989/leetcode_solved/tree/main/1356-sort-integers-by-the-number-of-1-bits/) | Easy |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Aditi1989/leetcode_solved/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 ## Counting
 | Problem Name | Difficulty |
@@ -91,6 +94,7 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Aditi1989/leetcode_solved/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -104,11 +108,13 @@ MY LEETCODE: https://leetcode.com/u/Aditi_Mukherjee/
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/Aditi1989/leetcode_solved/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/Aditi1989/leetcode_solved/tree/main/3130-find-all-possible-stable-binary-arrays-ii/) | Hard |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/Aditi1989/leetcode_solved/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Aditi1989/leetcode_solved/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Aditi1989/leetcode_solved/tree/main/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
 ## Graph Theory
